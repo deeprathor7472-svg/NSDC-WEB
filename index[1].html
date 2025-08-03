@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NSDC Certificate Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">NSDC</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Verification</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Certificate Verification Section -->
+  <section class="verify-section">
+    <h2>Certificate Verification</h2>
+    <p>Enter your Certificate Number to verify:</p>
+    <input type="text" id="certId" placeholder="e.g., NSDC2025001235" />
+    <button onclick="verifyCertificate()">Verify</button>
+    <p id="resultMessage"></p>
+    <a id="downloadBtn" href="#" download style="display:none;" class="download-btn">
+      Download Certificate
+    </a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
